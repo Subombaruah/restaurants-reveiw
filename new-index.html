@@ -86,6 +86,42 @@
     a.back:hover {
       text-decoration: underline;
     }
+    .order {
+  background: #fff3f7;
+  padding: 3em 1em;
+  text-align: center;
+}
+
+.order form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.order input,
+.order textarea {
+  padding: 0.8em;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.order button {
+  background-color: #d4af7f;
+  color: white;
+  border: none;
+  padding: 1em;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order button:hover {
+  background-color: #c39760;
+}
   </style>
 </head>
 <body>
@@ -127,7 +163,41 @@
       <strong>Rahul K.</strong><br>
       "Good service, good food. Highly recommend chicken  biryani."
     </div>
-  </div>
+    </div>
+  <section class="order">
+  <h2>Place Your Order</h2>
+  <form action="https://formspree.io/f/xanopkpv" method="POST">
+    <label>Your Name:</label>
+    <input type="text" name="name" required>
+
+    <label>Your Email:</label>
+    <input type="email" name="email" required>
+
+    <label> item u want:</label>
+    <input type="text" name="cake" required>
+
+    <label>Quantity:</label>
+    <input type="number" name="quantity" min="1" required>
+
+    <label>Delivery Details:</label>
+    <textarea name="message" rows="4" required></textarea>
+
+    <button type="submit">Send Order</button>
+  </form>
+  <p> we deliver all across dibrugarh with hoome delivery!</p>
+</section>
+  
+
+
+
+  
+  <section class="contact">
+    <h2>Place an Order</h2>
+    <p>Email: your-email@example.com</p>
+    <p>WhatsApp: +91-95431072449</p>
+  </section>
+
+    
 
   <footer>
     &copy; 2025 Honest-Review | Discover Local Food Gems in Dibrugarh
