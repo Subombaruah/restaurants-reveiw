@@ -61,6 +61,17 @@
     .image2{
       width: 250px;
     }
+    .heading{
+      weight: bold;
+    }
+    .filter {
+      text-align: center;
+    }
+    .bar{
+      backgrounf color: grey;
+      border-radius: 7px;
+      border: 2px
+    }
 
   
   </style>
@@ -77,13 +88,13 @@
 </head>
 <body>
   <header>
-    <h1>Top 15 Restaurants in Dibrugarh</h1>
-    <p>Best Local & Ethnic Eateries to Try</p>
+    <h1 class="heading">TOP 15 RESTAURANTS IN DIBRUGARH</h1>
+    <p>Best Local & Ethnic Eateries To Try</p>
   </header>
   <div class="container">
     <section>
-      <h2>Filter by Area</h2>
-      <div id="filter">
+      <h2 class="filter">Filter By Area</h2>
+      <div class="bar" id="filter">
         <select id="areaFilter" onchange="filterRestaurants()">
           <option value="All">All Areas</option>
           <option value="Thana Chariali">Thana Chariali</option>
